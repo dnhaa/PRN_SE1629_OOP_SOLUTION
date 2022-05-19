@@ -1,11 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace Prn.Se1629;
 
-namespace Prn.Se1629;
-
-internal interface iProduct
+public interface IProduct
 {
+    void Add(Product p);
+    bool Update(Product p);
+    bool Delete(Product p);
+    Product Get(int productID);
+    //default là public abstract void
+
+    void Display();
+    
+
 }
