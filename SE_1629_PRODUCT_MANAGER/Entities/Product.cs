@@ -22,7 +22,7 @@ public class Product
         Quantity = quantity;
     }
 
-    public override string? ToString() => $"[Id = {Id}, Product Name = {Product}, Desc = {Desc}, Unit Price = {UnitPrice}, Quantity = {Quantity}]";
+    public override string? ToString() => $"[Id = {Id}, Product Name = {ProductName}, Desc = {Desc}, Unit Price = {UnitPrice}, Quantity = {Quantity}]";
 
     /*Increase percent unit_price*/
     public void IncreaseUnitPrice(double unitPrice) => UnitPrice = UnitPrice * unitPrice / 100;
